@@ -160,7 +160,7 @@ function test_integer_problem(Module) {
         Lower: 0,
         Upper: Infinity,
         Primal: 3,
-        //Type: 'Integer',
+        Type: 'Integer',
         Name: 'a'
       },
       b: {
@@ -168,7 +168,7 @@ function test_integer_problem(Module) {
         Lower: 0,
         Upper: Infinity,
         Primal: 0.5,
-        //Type: 'Continuous',
+        Type: 'Continuous',
         Name: 'b'
       }
     },

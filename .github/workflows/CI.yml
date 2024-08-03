@@ -15,8 +15,6 @@ jobs:
       - run: npm ci
       - name: build
         run: npm run build
-      - name: test
-        run: npm test
       - name: List root directory contents
         run: ls -al
       - name: List build directory contents
@@ -26,3 +24,5 @@ jobs:
         with:
           name: build-artifacts
           path: build/
+      - name: test
+        run: npm test
