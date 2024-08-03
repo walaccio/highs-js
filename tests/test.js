@@ -381,21 +381,21 @@ End`);
         Index: 1,
         Lower: 0,
         Name: 'x0',
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Upper: Infinity
       },
       x1: {
         Index: 0,
         Lower: 0,
         Name: 'x1',
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Upper: 1
       },
       x2: {
         Index: 2,
         Lower: 1.1,
         Name: 'x2',
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Upper: 1
       }
     },
