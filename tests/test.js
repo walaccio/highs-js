@@ -288,7 +288,7 @@ function test_infeasible(Module) {
         Index: 0,
         Lower: 0,
         Upper: 0,
-        //Type: 'Continuous',
+        Type: 'Continuous',
         Name: 'a'
       }
     },
@@ -320,7 +320,7 @@ end`);
         Index: 0,
         Lower: 0,
         Upper: 0,
-        //Type: 'Integer',
+        Type: 'Integer',
         Name: 'a'
       }
     },
@@ -346,7 +346,7 @@ function test_unbounded(Module) {
       a: {
         Index: 0,
         Lower: 0,
-        //Type: 'Continuous',
+        Type: 'Continuous',
         Upper: Infinity,
         Primal: 1,
         Dual: -0,
@@ -381,21 +381,21 @@ End`);
         Index: 1,
         Lower: 0,
         Name: 'x0',
-        //Type: 'Continuous',
+        Type: 'Continuous',
         Upper: Infinity
       },
       x1: {
         Index: 0,
         Lower: 0,
         Name: 'x1',
-        //Type: 'Continuous',
+        Type: 'Continuous',
         Upper: 1
       },
       x2: {
         Index: 2,
         Lower: 1.1,
         Name: 'x2',
-        //Type: 'Continuous',
+        Type: 'Continuous',
         Upper: 1
       }
     },
