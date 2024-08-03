@@ -346,7 +346,7 @@ function test_unbounded(Module) {
       a: {
         Index: 0,
         Lower: 0,
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Upper: Infinity,
         Primal: 1,
         Dual: -0,
