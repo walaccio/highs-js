@@ -288,7 +288,7 @@ function test_infeasible(Module) {
         Index: 0,
         Lower: 0,
         Upper: 0,
-        //Type: 'Continuous',
+        ///Type: 'Continuous',
         Name: 'a'
       }
     },
