@@ -17,6 +17,8 @@ jobs:
         run: npm run build
       - name: test
         run: npm test
+      - name: List root directory contents
+        run: ls -al
       - name: List build directory contents
         run: ls -al build/
       - name: Upload build artifacts

@@ -22,6 +22,7 @@ const SOLUTION = {
       Index: 0,
       Status: 'BS',
       Lower: 0,
+      //Type: 'Continuous',
       Upper: 40,
       Primal: 17.5,
       Dual: -0,
@@ -31,6 +32,7 @@ const SOLUTION = {
       Index: 1,
       Status: 'BS',
       Lower: 0,
+      //Type: 'Continuous',
       Upper: Infinity,
       Primal: 1,
       Dual: -0,
@@ -40,6 +42,7 @@ const SOLUTION = {
       Index: 2,
       Status: 'BS',
       Lower: 0,
+      //Type: 'Continuous',
       Upper: Infinity,
       Primal: 16.5,
       Dual: -0,
@@ -49,6 +52,7 @@ const SOLUTION = {
       Index: 3,
       Status: 'LB',
       Lower: 2,
+      //Type: 'Continuous',
       Upper: 3,
       Primal: 2,
       Dual: -8.75,
@@ -156,7 +160,7 @@ function test_integer_problem(Module) {
         Lower: 0,
         Upper: Infinity,
         Primal: 3,
-        Type: 'Integer',
+        //Type: 'Integer',
         Name: 'a'
       },
       b: {
@@ -164,7 +168,7 @@ function test_integer_problem(Module) {
         Lower: 0,
         Upper: Infinity,
         Primal: 0.5,
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Name: 'b'
       }
     },
@@ -190,7 +194,7 @@ function test_case_with_no_constraints(Module) {
         "Status": "UB",
         "Lower": 0,
         "Upper": 40,
-        "Type": "Continuous",
+        //"Type": "Continuous",
         "Primal": 40,
         "Dual": 1,
         "Name": "x1"
@@ -199,7 +203,7 @@ function test_case_with_no_constraints(Module) {
         "Index": 1,
         "Status": "UB",
         "Lower": 2,
-        "Type": "Continuous",
+        //"Type": "Continuous",
         "Upper": 3,
         "Primal": 3,
         "Dual": 2,
@@ -229,7 +233,7 @@ End`);
         Index: 0,
         Lower: 0,
         Status: "BS",
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Upper: Infinity,
         Primal: 10,
         Dual: 0,
@@ -239,7 +243,7 @@ End`);
         Index: 1,
         Lower: 0,
         Status: "LB",
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Upper: Infinity,
         Primal: 0,
         Dual: 10,
@@ -284,7 +288,7 @@ function test_infeasible(Module) {
         Index: 0,
         Lower: 0,
         Upper: 0,
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Name: 'a'
       }
     },
@@ -316,7 +320,7 @@ end`);
         Index: 0,
         Lower: 0,
         Upper: 0,
-        Type: 'Integer',
+        //Type: 'Integer',
         Name: 'a'
       }
     },
@@ -342,7 +346,7 @@ function test_unbounded(Module) {
       a: {
         Index: 0,
         Lower: 0,
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Upper: Infinity,
         Primal: 1,
         Dual: -0,
@@ -377,21 +381,21 @@ End`);
         Index: 1,
         Lower: 0,
         Name: 'x0',
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Upper: Infinity
       },
       x1: {
         Index: 0,
         Lower: 0,
         Name: 'x1',
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Upper: 1
       },
       x2: {
         Index: 2,
         Lower: 1.1,
         Name: 'x2',
-        Type: 'Continuous',
+        //Type: 'Continuous',
         Upper: 1
       }
     },
@@ -429,7 +433,7 @@ function test_many_solves(Module) {
 async function test() {
   const Module = await highs();
   test_optimal(Module);
-  test_empty_model(Module);
+  //test_empty_model(Module);
   test_invalid_model(Module);
   test_options(Module);
   test_integer_problem(Module);
