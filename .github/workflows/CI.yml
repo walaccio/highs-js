@@ -17,6 +17,8 @@ jobs:
         run: npm run build
       - name: test
         run: npm test
+      - name: List build directory contents
+        run: ls -al build/
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
         with:
