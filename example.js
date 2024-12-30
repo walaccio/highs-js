@@ -1,7 +1,7 @@
 var highs = await require("highs")();
 
 highs.solve(`Maximize
- obj: x + 6y
+ obj: x + 4y
 Subject To
  c1: x + y <= 20
  c2: x - y >= -30
